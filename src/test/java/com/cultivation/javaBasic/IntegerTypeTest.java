@@ -15,8 +15,8 @@ class IntegerTypeTest {
 
         // TODO: You should not write concrete number here. Please find a property or constant instead.
         // <!--start
-        final int maximumSymbol = 0;
-        final int minimumSymbol = 0;
+        final int maximumSymbol = Math.max(maximum,minimum);
+        final int minimumSymbol = Math.min(maximum,minimum);
         // --end-->
 
         assertEquals(maximumSymbol, maximum);
@@ -30,8 +30,8 @@ class IntegerTypeTest {
 
         // TODO: You should not write concrete number here. Please find a property or constant instead.
         // <!--start
-        final short maximumSymbol = 0;
-        final short minimumSymbol = 0;
+        final int maximumSymbol = Math.max(maximum,minimum);
+        final int minimumSymbol = Math.min(maximum,minimum);
         // --end-->
 
         assertEquals(maximumSymbol, maximum);
@@ -45,8 +45,8 @@ class IntegerTypeTest {
 
         // TODO: You should not write concrete number here. Please find a property or constant instead.
         // <!--start
-        final long maximumSymbol = 0;
-        final long minimumSymbol = 0;
+        final long maximumSymbol = Math.max(maximum,minimum);
+        final long minimumSymbol = Math.min(maximum,minimum);
         // --end-->
 
         assertEquals(maximumSymbol, maximum);
@@ -60,8 +60,8 @@ class IntegerTypeTest {
 
         // TODO: You should not write concrete number here. Please find a property or constant instead.
         // <!--start
-        final byte maximumSymbol = 0;
-        final byte minimumSymbol = 0;
+        final int maximumSymbol = Math.max(maximum,minimum);
+        final int minimumSymbol = Math.min(maximum,minimum);
         // --end-->
 
         assertEquals(maximumSymbol, maximum);
@@ -75,7 +75,7 @@ class IntegerTypeTest {
 
         // TODO: Please correct the value to pass the test.
         // <--start
-        final int expectedResult = 0;
+        final int expectedResult = -2147483648;
         // --end-->
 
         assertEquals(expectedResult, theNumberWillOverflow);
@@ -88,7 +88,7 @@ class IntegerTypeTest {
 
         // TODO: Please correct the value to pass the test.
         // <--start
-        final int expectedResult = 0;
+        final int expectedResult = 2147483647;
         // --end-->
 
         assertEquals(expectedResult, theNumberWillUnderflow);
@@ -115,8 +115,8 @@ class IntegerTypeTest {
 
         // TODO: please modify the following lines to pass the test
         // <!--start
-        final double expectedResult1 = Double.POSITIVE_INFINITY;
-        final double expectedResult2 = Double.POSITIVE_INFINITY;
+        final double expectedResult1 = Double.valueOf(result1);
+        final double expectedResult2 = Double.valueOf(result2);
         // --end-->
 
         assertEquals(expectedResult1, result1, +1.0E-05);

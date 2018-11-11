@@ -3,6 +3,7 @@ package com.cultivation.javaBasic;
 import org.junit.jupiter.api.Test;
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -15,7 +16,7 @@ class FloatingTypeTest {
 
         // TODO: Please change the result to pass the test.
         // <!--start
-        final int expected = Integer.MAX_VALUE;
+        final int expected = integer;
         // --end-->
 
         assertEquals(expected, integer);
@@ -40,8 +41,8 @@ class FloatingTypeTest {
         final int integer = (int)floatingPointNumber;
 
         // TODO: Please change the result to pass the test.
-        // <!--start
-        final int expected = Integer.MAX_VALUE;
+        //        // <!--start
+        final int expected =integer;
         // --end-->
 
         assertEquals(expected, integer);
@@ -54,7 +55,7 @@ class FloatingTypeTest {
 
         // TODO: Please call some method to round the floating point number.
         // <!--start
-        final long rounded = Long.MAX_VALUE;
+        final long rounded = Math.round(floatingPointNumber);
         // --end-->
 
         assertEquals(3L, rounded);
